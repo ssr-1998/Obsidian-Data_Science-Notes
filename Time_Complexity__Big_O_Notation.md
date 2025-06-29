@@ -7,10 +7,21 @@ Source - https://www.youtube.com/watch?v=vgSKOMsjLbc
 		- [[#Mathematical Definition]]
 		- [[#Industry Definition]]
 	- [[#Types of O]]
-		- [[#O(1) if Algorithm runtime is Constant]]
+		- [[#O(1) - Constant Time]]
 			- [[#Derivation of Equation]]
-		- [[#O(n) if Algorithm runtime is Linear]]
+		- [[#O(n) - Linear Time]]
 			- [[#Derivation of Equation]]
+		- [[#O(n x) - Polynomial Time (e.g., O(n 2) - Quadratic, O(n 3) - Cubic)]]
+		- [[#O(log n) - Logarithmic Time]]
+		- [[#O(n log n) - Log-linear (or Linearithmic or Quasilinear) Time]]
+		- [[#O(2 n) - Exponential Time]]
+		- [[#O(n!) - Factorial Time]]
+		- [[#Order of Big O Notations from Best to Worst]]
+	- [[#Asymptotic Notations]]
+		- [[#Big O]]
+		- [[#Big Omega]]
+	- [[#Other Sources]]
+
 ## Time Complexity
 
 With an increase in the Size of the Input what change will we see in the runtime of an Algorithm, this analysis is called Time Complexity Analysis.
@@ -26,7 +37,7 @@ Time Complexity is the study of efficiency of Algorithms.
 ## O (Big O | Order of)
 ### Definitions of O
 
-There are two definitions or we can meanings of ***O***:
+There are two definitions or we can say, the meanings of ***O***:
 1. Mathematical Definition
 2. Industry Definition
 #### Mathematical Definition
@@ -39,14 +50,15 @@ Where n refers to the Input Size
 
 In interviews or verbally, we refer ***O*** as ***Order of*** and the Industry expects us to write the minimum of [O(n^1), O(n^2), O(n^3), etc.].
 
-### Types of O
+### Types of Big O or Big O Notations
 
-#### O(1) if Algorithm runtime is Constant
+Big O Notation describes the upper bound of an Algorithm's Time Complexity as the input size grows, with common types including **O(1) (Constant), O(n) (Linear), O(log n) (Logarithmic), O(n log n) (Log-linear), O(n²) (Quadratic), O(2ⁿ) (Exponential), and O(n!) (Factorial)**. These notations represent ***different growth rates*** of an Algorithm's Runtime, with `O(1) being the most efficient and O(n!) being the least efficient.`
+#### O(1) - Constant Time
 
 Irrespective of the Input Size, if the Algorithm runtime is Approximately Constant then in that case we use O(1) (Big O of 1).
 ##### Derivation of Equation:
 
-Lets suppose we have an equation for a line which gives us the amount of runtime (t) that an Algorithm will take to process Input Data of Size (n) based on the various sub-processes of the Algorithm (a, b & c). This means that whatever time each sub-process will take to process the Data, will be the runtime for the Algorithm. So, the equation will be:
+Lets suppose we have an equation for a line which gives us the amount of the runtime (t), that an Algorithm will take to process Input Data of Size (n), based on the various sub-processes of the Algorithm (a, b & c). This means that whatever time each sub-process will take to process the Data, the sum of them will be the runtime (t) for the Algorithm. So, the equation will be:
 
 t = a + b + c
 
@@ -56,12 +68,12 @@ t = a(n^0) + b(n^0) + c(n^0)
 
 Such that, Big_O for any constant is written as O(1) as [(n^0) = 1].
 
-#### O(n) if Algorithm runtime is Linear
+#### O(n) - Linear Time
 
 If the Algorithm runtime is linear w.r.t. the Input Size, then in that case we use O(n) (Big O of n).
 ##### Derivation of Equation:
 
-Lets suppose we have an equation for a line which gives us the amount of runtime (t) an Algorithm will take to process Input Data of Size (n) based on the various sub-processes of the Algorithm (a, b & c). This means that whatever time each sub-process will take to process the Data, will be the runtime for the Algorithm. So, the equation will be:
+Lets suppose we have an equation for a line that gives us the amount of runtime (t) for an Algorithm which will take it to process Input Data of Size (n) based on the various sub-processes of the Algorithm (a, b & c). This means that whatever time each sub-process will take to process the Data, the sum of them will be the runtime for the Algorithm. So, the equation will be:
 
 t = a + b + c
 
@@ -71,26 +83,48 @@ t = a(n^1) + b(n^2) + c(n^3)
 
 	Note: Polynomial Degrees stated in the equation are random.
 
-In such equations, the sub-process taking maximum time or which is expressed with maximum degree will be taken in the Big_O equation, like:
+In such equations, the sub-process that takes the maximum time or which is expressed with the maximum degree, will be taken in the Big_O equation, like:
 
 O(n^3) == O(n)
 
+#### O(n^x) - Polynomial Time (e.g., O(n^2) - Quadratic, O(n^3) - Cubic)
+
+#### O(log n) - Logarithmic Time
+
+#### O(n log n) - Log-linear (or Linearithmic or Quasilinear) Time
+
+#### O(2^n) - Exponential Time
+
+#### O(n!) - Factorial Time
+
+#### Order of Big O Notations from Best to Worst
+
+![[Time_Complexity__Big_O_Notations_Order.png]]
+
+- **Best** -> [[#O(1) - Constant Time]]
+- **Good** -> [[#O(log n) - Logarithmic Time]]
+- **Fair** -> [[#O(n) - Linear Time]]
+- **Bad** -> [[#O(n log n) - Log-linear (or Quasilinear) Time]]
+- **Worst** -> [[#O(n x) - Polynomial Time (e.g., O(n 2) - Quadratic, O(n 3) - Cubic)]]
+- **Worst** -> [[#O(2 n) - Exponential Time]]
+- **Worst** -> [[#O(n!) - Factorial Time]]
+
 ___
+### Asymptotic Notations
 
-Next Video: https://www.youtube.com/watch?v=1OTX-WXQHCQ
+Source: https://www.youtube.com/watch?v=1OTX-WXQHCQ
 
-Asymptotic Notations are used to compare Algorithms.
-There are 3 types of Asymptotic Notations:
+They are used to compare Algorithms and there are 3 types of Asymptotic Notations:
 - Big O
 - Big Theta
 - Big Omega
 
-Big O
+#### Big O
 - A function f(n) is said to be [O(g(n))] (Big O of g(n)) if and only if there exists a constant `c` & a constant `n_node`, such that [0 <= f(n) <= c.(g(n))].
 	- g(n) is basically the ***function of the Algorithm*** which is represented under ***Big O parentheses*** [O(g(n))].
 	- f(n) is Time & n is Input Data Size.
 	- The above statement states that if there is a constant `c` which when gets multiplied to the `O(g(n))` their result will always be either equal or greater than the time i.e. `f(n)` for all the values where `n` is greater than or equal to `n_node`, it will fulfill this condition [0 <= f(n) <= c.(g(n))].
-	- `Toh agar hum *c* ki value ke saath *n_node* ki value ka koi ek aisa combination dhund le jissame fir *n* ki value chahe kitni hi *n_node* se badhi kyu na aa jaye fir bhi ye *Condition [0 <= f(n) <= c.(g(n))]* fulfill hogi toh hum ye keh skenge ki *Function f(n) is said to be (Big O of g(n)) [O(g(n))]* but agar aisa koi combination hum nahi dhund paye toh ye kahenge ki *Function f(n) can't be said as (Big O of g(n)) [O(g(n))]*`
+	- `Toh agar hum c ki value ke saath n_node ki value ka koi ek aisa combination dhund le jissame fir n ki value chahe kitni hi n_node se badhi kyu na aa jaye fir bhi ye Condition [0 <= f(n) <= c.(g(n))] fulfill hogi toh hum ye keh skenge ki Function f(n) is said to be (Big O of g(n)) [O(g(n))] but agar aisa koi combination hum nahi dhund paye toh ye kahenge ki Function f(n) can't be said as (Big O of g(n)) [O(g(n))]`
 	- Example,
 ```
 		f(n) = 1 + n^3
@@ -109,11 +143,9 @@ Big O
 		So, we can say that if c = 1 and n_node = 2 then for all the values where n >= n_node, the Condition will always be TRUE.
 ```
 
+#### Big Omega
 
-13:28 - Big Omega
-
-
-
+Starts from (13:28) in the Source.
 
 
 
@@ -121,8 +153,11 @@ Big O
 
 
 
+## Other Sources:
 
-
-
-
-
+- Understanding Big-O Notation (by Coen Goedegebure, 2017) - https://www.coengoedegebure.com/understanding-big-o-notation/
+- Big-O Notation Tutorial (GeeksforGeeks) - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+- DSA using Python in Hindi (MySirG.com) - https://www.youtube.com/playlist?list=PL7ersPsTyYt1HnCgrT6Up-pan4yLBpyFs
+- Time & Space Complexity - DSA Series (Shradha - Apna College) - https://www.youtube.com/watch?v=PwKv8fOcriM
+- Hindi Data Structures And Algorithms Tutorial (by Code Basics Hindi) - https://www.youtube.com/playlist?list=PLPbgcxheSpE3NlJ30EDpxNYU6P2Jylns8
+- Data Structure and Algorithms in Python (by Montukeshwar Vaishnaw) - https://www.youtube.com/playlist?list=PL13aQMQVPecA33n8w9S-cwD9geQsY8JhU
