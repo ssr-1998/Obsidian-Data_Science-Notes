@@ -16,20 +16,20 @@ Source - https://www.youtube.com/watch?v=vgSKOMsjLbc
 		- [[#O(n log n) - Log-linear (or Linearithmic or Quasilinear) Time]]
 		- [[#O(2 n) - Exponential Time]]
 		- [[#O(n!) - Factorial Time]]
-		- [[#Order of Big O Notations from Best to Worst]]
-	- [[#Asymptotic Notations]]
-		- [[#Big O]]
-		- [[#Big Omega Ω]]
-		- [[#Big Theta θ]]
-	- [[#Best, Worst, and Expected Case]]
-		- [[#Using Algo 1]]
-			- [[#Best Case]]
-			- [[#Worst Case]]
-			- [[#Expected Case]]
-		- [[#Using Algo 2]]
-			- [[#Best Case]]
-			- [[#Worst Case]]
-	- [[#Other Sources]]
+	- [[#Order of Big O Notations from Best to Worst]]
+- [[#Asymptotic Notations]]
+	- [[#Big O]]
+	- [[#Big Omega Ω]]
+	- [[#Big Theta θ]]
+- [[#Best, Worst, and Expected Cases]]
+	- [[#Using Algo 1]]
+		- [[#Best Case]]
+		- [[#Worst Case]]
+		- [[#Expected Case]]
+	- [[#Using Algo 2]]
+		- [[#Best Case]]
+		- [[#Worst Case]]
+- [[#Other Sources]]
 
 ## Time Complexity
 
@@ -106,7 +106,7 @@ O(n^3) == O(n)
 
 #### O(n!) - Factorial Time
 
-#### Order of Big O Notations from Best to Worst
+### Order of Big O Notations from Best to Worst
 
 ![[Time_Complexity__Big_O_Notations_Order.png]]
 
@@ -119,7 +119,7 @@ O(n^3) == O(n)
 - **Worst** -> [[#O(n!) - Factorial Time]]
 
 ___
-### Asymptotic Notations
+## Asymptotic Notations
 
 Source: https://www.youtube.com/watch?v=1OTX-WXQHCQ
 
@@ -130,7 +130,7 @@ Source: https://www.youtube.com/watch?v=1OTX-WXQHCQ
 
 ![[Big_O_Omega_Theta_GRAPH.png]]
 
-#### Big O
+### Big O
 - **Definition:** A function f(n) is said to be [O(g(n))] (Big O of g(n)) if and only if there exists a constant `c` & a constant `n_0`, such that [0 <= f(n) <= c.(g(n))].
 - In simple terms, if we are able to find a value of n which deserves to be called an n_0. And after this, for all the values of n that are greater than n_0, if `g(n).c >= f(n)`, then we can say the function [f(n) = O(g(n))] (Big O for g(n)).
 	- g(n) is basically the ***function that is inside the Big O like O(g(n)) => O(n), O(log n), O(n log n), O(1), etc.***. And `c` is a constant.
@@ -155,7 +155,7 @@ Source: https://www.youtube.com/watch?v=1OTX-WXQHCQ
 		So, we can say that if c = 1 and n_0 = 2 then for all the values where n >= n_0, the Condition will always be TRUE.
 ```
 
-#### Big Omega Ω
+### Big Omega Ω
 
 The definition & functionality of Big Omega Ω is very similar to Big O, with just a single change.
 Definition: A function f(n) is said to be Big Omega Ω of g(n), if and only if there exists a constant `c` and a constant `n_0`, such that the following condition remains True:
@@ -164,7 +164,7 @@ Definition: A function f(n) is said to be Big Omega Ω of g(n), if and only if t
 
 Now, here, it is said that if we are able to find a constant value for c, such that whenever the value of n is greater than the value of second constant `n_0`, the function `f(n)` will always be greater than or equal to `c.g(n)`.
 
-#### Big Theta θ
+### Big Theta θ
 
 This type of Asymptotic Notation combines the functionalities of both Big O & Big Omega Ω in it, to provide us tighter boundaries around the function f(n) i.e. time.
 Definition: A function f(n) is said to be Big Theta θ of g(n), if and only if there exists a group of constants like - 
@@ -186,7 +186,7 @@ Equation for Big Theta θ -> 0 <= c1.g(n) <= f(n) <= c2.g(n)
 
 Note: Whenever, we are required to compare two algorithms/functions performance based on their Time Complexity, it's best to use Big Theta θ, as it combines both Big O & Big Omega Ω. And therefore, gives function f(n) tighter boundaries.
 ___
-### Best, Worst, and Expected Case:
+## Best, Worst, and Expected Cases:
 
 Source: https://www.youtube.com/watch?v=5g7K86jYto8&pp=0gcJCcMJAYcqIYzv
 
@@ -204,17 +204,17 @@ n = len(array)
 Also, let's say that the number of times the function has to run is equal to the number of times `k` time will be taken.
 ```
 
-#### Using Algo 1
+### Using Algo 1
 **Algorithm 1** also means the approach 1 of solving this Problem Statement. In this approach, we are going to apply the simple & basic solution i.e. to use a `for` loop on the Array of size `n` to iterate over each value and check if the value matches with the value of `a`.
 
-##### Best Case:
+#### Best Case:
 As per the Time Complexity, it would be the best case if the first value of the array itself is the value of `a`. In that way, the function will only have to run 1 time i.e. 1k.
 Therefore, we can say that for the best case, the Time Complexity of the function is O(1) i.e. constant.
 
-##### Worst Case:
+#### Worst Case:
 Now, the worst case would definitely will be the case if value of `a` would be the last value of the Array. So, the function will have to run all the iterations to match with the last value. Therefore, if time taken would be `nk` i.e. if 1k = 1 iteration, then as the length of the array is `n`, so time taken for it will be `nk`. Or can be said as O(n) i.e. linear.
 
-##### Expected Case:
+#### Expected Case:
 The Expected Case is also known as the Average Case for the time taken by the Function in terms of Time Complexity.
 ```
 Average Case = [(Sum of all possible runtimes) / (No. of possible runtimes)]
@@ -230,17 +230,17 @@ Therefore, in terms for Time Complexity, the Average Case of Time Complexity for
 ```
 Now, in this example, the array was quite small, and therefore, it was easy to calculate the Average Case. But in real-world problems, the case might be different, so there instead of taking all the values into consideration while calculating the `Sum of Possible Runtimes`, we will take something like [2, 4, 6, ...., n]. And so, for the nth value, the possible time taken will be `nk`. So, using this and formulas from Arithmetic & Geometry Progression, we calculate & fine the final value of g(n) for the Big O/Omega/Theta Function.
 
-#### Using Algo 2
+### Using Algo 2
 **Algorithm 2** i.e. the approach 2 of solving this Problem Statement. In this approach, we are going to use a different technique to find the matching value with `a`.
 Step 1: We will check if the value of `a` equals to either the first or the last value of the Array.
 Step 2: If not matched, we will find the medium of the Array i.e. the middle value of the Array. If `n` is even, then we will consider both the center values and check if the value of whether `a` is less than the `center 1` value or is greater than the `center 2 value`. 
 Step 3: Suppose, it's less than the `Center 1` value, then we will break the Array and keep only the part where value of `a` falls. Then, again we will find the medium and continue with the same steps until we find the value of `a`.
 Now, let's further discuss this Algorithm under the Best & the Worst Cases.
-##### Best Case:
+#### Best Case:
 Under the Best Case, it would be best if the value of `a` matches with either the first or the last value of the Array, such that only 1 iteration of the function will run.
 Therefore, Time Complexity for the Best Case would be O(1) i.e. Constant.
 
-##### Worst Case:
+#### Worst Case:
 Now, under the Worst Case, let's say the value of `a` = 4.
 So, in the first step, the function will check the value of `a` with the first and the last values of the Array i.e. 2 & 10. As the values won't match, we'll move to the second step.
 Now, the medium of the Array is `6`. And the value of `a` i.e. 4 is less than the medium. So, we will break the Array into two parts and keep only `[2, 4, 6]` part for further checking.
@@ -260,6 +260,10 @@ Iteration 7: As per the Medium each part will have ~1 values.
 So, in ~7 iterations, we got to know that the value of `a` doesn't exist in the Array, whereas with Algo 1, it would have taken ~100 iterations.
 If, we look closely, for both of the above examples, when we used `Algorithm 2`, the number of iterations were very close to the log(n) (Log_base_2 means that how many times can the number n be divided by 2 to exhaust the value to ~1.)
 So, based on this logic, it can be said that even for the Worst Case Scenario while using Algo 2, the Time Complexity will be O(log(n)) i.e. Logarithmic Time, which is better than the Linear Time i.e. O(n) of Time Complexity.
+
+---
+
+Source: https://www.youtube.com/watch?v=STL8ESuETmM&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=5
 
 ## Other Sources:
 
