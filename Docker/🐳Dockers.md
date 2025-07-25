@@ -127,6 +127,8 @@ Think of a container like a **shipped box** with all the parts your app needs to
 | **docker rm <container_id>**     | Removes a Container                       |
 | **docker rmi <image_id>**        | Removes an Image                          |
 
+For a detailed walkthrough about all the CLI Commands, check [[Docker Interactive CLI]]
+
 #### Command Flow:
 
 ![[Docker_Command_Execution_Flow.png]]
