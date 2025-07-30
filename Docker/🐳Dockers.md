@@ -330,15 +330,17 @@ services:
 ### Useful Commands:
 
 ```bash
-docker-compose up           # Start services
+docker-compose up           # Start Services
 
-docker-compose up -d        # Detached mode
+docker-compose up -d        # Detached Mode
 
-docker-compose down         # Stop and clean
+docker-compose up --build   # Forces a rebuild of the Images
 
-docker-compose ps           # List running services
+docker-compose down         # Stop and Clean
 
-docker-compose logs         # View logs
+docker-compose ps           # List's Running Services
+
+docker-compose logs         # View Logs
 ```
 
 ## Advanced Docker Topics:
