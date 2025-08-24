@@ -100,7 +100,7 @@ b) Activation Function over y [Activation_Function(Sigma(XiWi) + Bias)] - There 
 Sigmoid Activation Function is used for Binary Classification as it returns either 0 to 1.
 Equation.
 	(1 / (1 + e^(-y)))
-		- () means to the power of e
+		- `^()` means to the power of e
 		- y = Sigma XiWi + Bias
 
 Linear Activation Function is used for Regression problems.
@@ -148,7 +148,7 @@ So, basically it is referred to as the Process of how Deep Learning Model Archit
 
 > Input -> Hidden -> Output Layers respectively.
 
-Steps: [ Input Layer -> Weights Added -> Bias Added -> Activation Function ]
+**Steps: [ Input Layer -> Weights Added -> Bias Added -> Activation Function ]**
 
 ### Back Propagation
 
@@ -164,7 +164,7 @@ Steps: [ Loss Function -> Optimizers -> Weights Updating ]
 
 Weight Updating Formula = Old_Weight - Learning_Rate( Derivative of Loss with respect to Derivative of Old_Weight )
 
-	![[DL__Weight_Updation_Formula.png]]
+![[DL__Weight_Updation_Formula.png]]
 
 (Derivative of Loss w.r.t Derivative of Old_Weight) is actually the Slope of Gradient Descent (curve b/w Loss Function & Weights) which helps in finding the Direction of Weights i.e. whether they Increase or Decrease.
 
@@ -629,29 +629,29 @@ Difference among Loss & Cost Functions is regarding the no. of records.
 - Operation happens this way that we put the Filter on top of the Input Image, as the filter is of 3x3 it will be first applied to the Top Corner 3x3 Pixel Values of the Input Image, like for 
 	***1st iteration:***
 
-		![[Pasted image 20240414134721.png]]
+	![[Pasted image 20240414134721.png]]
 
 	A variable named `Stride` is used here which specifies the number of pixel row jumps should be between each Iteration to the left of the Input Image.
 
 	***2nd Iteration (Stride = 1):***
 
-		![[Pasted image 20240414134832.png]]
+	![[Pasted image 20240414134832.png]]
 
 	***3rd Iteration (Stride = 1):***
 
-		![[Pasted image 20240414134906.png]]
+	![[Pasted image 20240414134906.png]]
 
 	***4th Iteration (Stride = 1):***
 
-		![[Pasted image 20240414135222.png]]
+	![[Pasted image 20240414135222.png]]
 	
-	now as the Filter has reached the last row to the left it will slide down to column no. 2 & start same 4 iteration from there. In the end we get:
+	now as the Filter has reached the last row to the right, it will slide down to column no. 2 & start same 4 iteration from there. In the end we get:
 
-		![[Pasted image 20240414135304.png]]
+	![[Pasted image 20240414135304.png]]
 
 	and now we ***Inverse the Min Max Scaling*** on the Result Matrix which gives us:
 
-		![[Pasted image 20240414135341.png]]
+	![[Pasted image 20240414135341.png]]
 
 	this happened because to Inverse the effect of `Min Max Scaling`, the Minimum Value will be converted to 0 & the Maximum Value will be converted to 255.
 
@@ -732,7 +732,7 @@ Difference among Loss & Cost Functions is regarding the no. of records.
 
 - Let's say that the Output Image Matrix of Previous Convolution Operation is of 3x3 Size & we want to apply a Max Pooling of 2x2 Size on top of it.
 
-- So, similar to the Convolution Operation, from Top Right of the Output Image Matrix a 2x2 Size Matrix Values will be selected & checked which one is the Max out of all of them. The Max value will be the 1st Value of the Max Pooling Matrix.
+- So, similar to the Convolution Operation, from Top Left of the Output Image Matrix a 2x2 Size Matrix Values will be selected & checked which one is the Max out of all of them. The Max value will be the 1st Value of the Max Pooling Matrix.
 
 - Here in Max Pooling, we generally use (Stride = 2) & such that using the Max Pooling we get the most important feature from the Output Image Matrix from the Previous Convolution Operation.
 
@@ -822,7 +822,7 @@ For t = 3
 For t = 4
 	O4 = Fnc((X14 * W) + (O3 * W'))
 
-After the Training is done for all the 4 Tokens till t=4, we will proceed towards the Output Layer where the O4 will be multiplied with W" and an Activation Function will be applied such as Sigmoid or Linear or Softmax or any other Activation Function which will classify the Output and give us the final output i.e. Y^
+After the Training is done for all the 4 Tokens till t=4, we will proceed towards the Output Layer where the O4 will be multiplied with W" and an Activation Function will be applied such as Sigmoid or Softmax or any other Activation Function which will classify the Output and give us the final output i.e. Y^.
 
 Note:
 - There are various ways to initialize weights (W, W')
