@@ -1,0 +1,14 @@
+More Topics to Cover:
+
+	Understand about Network Architectures:
+		1. AlexNet
+		2. VGGNet/ GoogleNet
+		3. Inception Network
+		4. ResNet
+		5. Siamese
+		6. SSD/ Yolo
+
+	Transfer Learning can be used when:
+		- We have a massive dataset in one domain and a smaller dataset in other similar domain.
+		- We have a pre-trained model in one domain and a massive dataset in other similar domain
+		- We have a pre-trained model in one domain and a smaller dataset in another similar domain

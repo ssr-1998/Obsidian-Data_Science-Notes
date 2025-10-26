@@ -1,3 +1,20 @@
 .obsidian/workspace.json
-C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\Docker\Docker_Compose\.venv
-C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\Docker\Docker_Compose\docker-compose-without-build.yml
+to_be_project_structure.txt
+
+# Deep Learning
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\02_Deep_Learning\Extras.txt
+
+# Docker
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\05_DevOps__Deployment\Docker\Docker_Compose\.venv
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\05_DevOps__Deployment\Docker\Docker_Compose\docker-compose-without-build.yml
+
+# NLP
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\03_NLP\3_Semantic_Processing
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\03_NLP\4_Transformers
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\03_NLP\5_LLMs
+
+# Others
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\01_Traditional_ML
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\04_RAG__Agentic_AI
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\06_Cloud_Platforms
+C:\1_SSR\Data_Science\Data_Science_Notes__GITHUB\07_Utilities_&_References

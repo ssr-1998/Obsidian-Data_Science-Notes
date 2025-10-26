@@ -108,7 +108,7 @@ O(n^3) == O(n)
 
 ### Order of Big O Notations from Best to Worst
 
-![[Time_Complexity__Big_O_Notations_Order.png]]
+![[Shared_Images/Time_Complexity__Big_O_Notations_Order.png]]
 
 - **Best** -> [[#O(1) - Constant Time]]
 - **Good** -> [[#O(log n) - Logarithmic Time]]
@@ -128,7 +128,7 @@ Source: https://www.youtube.com/watch?v=1OTX-WXQHCQ
 - Big Omega Ω
 - Big Theta θ
 
-![[Big_O_Omega_Theta_GRAPH.png]]
+![[Shared_Images/Big_O_Omega_Theta_GRAPH.png]]
 
 ### Big O
 - **Definition:** A function f(n) is said to be [O(g(n))] (Big O of g(n)) if and only if there exists a constant `c` & a constant `n_0`, such that [0 <= f(n) <= c.(g(n))].

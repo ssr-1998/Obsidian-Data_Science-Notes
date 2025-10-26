@@ -51,10 +51,10 @@ It can take any value within a certain range or interval. The Ratio and Interval
 Examples: Height in meters (e.g., 1.5 m, 2.0 m, 2.5 m) & Temperature in Fahrenheit (e.g., 32°F, 64°F, 96°F).
 # Types Of Distributions
 
-![[Pasted image 20240910225417.png]]
+![[Shared_Images/Pasted image 20240910225417.png]]
 ## Normal Distribution (Gaussian Distribution)
 
-![[Pasted image 20240910221729.png]]
+![[Shared_Images/Pasted image 20240910221729.png]]
 
 - Uses Continuous Data
 - Forms a Symmetric Bell-Shaped Curve
@@ -62,7 +62,7 @@ Examples: Height in meters (e.g., 1.5 m, 2.0 m, 2.5 m) & Temperature in Fahrenhe
 - Example: Height of individuals.
 ## Bernoulli Distribution
 
-![[Pasted image 20240910222004.png]]
+![[Shared_Images/Pasted image 20240910222004.png]]
 
 - A Discrete Probability Distribution that models the outcome of a binary event.
 - It is used in **Logistic Regression**.
@@ -70,28 +70,28 @@ Examples: Height in meters (e.g., 1.5 m, 2.0 m, 2.5 m) & Temperature in Fahrenhe
 - Example: Modeling the outcome of a single coin flip.
 ## Binomial Distribution
 
-![[Pasted image 20240910222132.png]]
+![[Shared_Images/Pasted image 20240910222132.png]]
 
 - A discrete probability distribution that represents the number of successes in a fixed number of independent Bernoulli trials.
 - It is a **Bernoulli Distribution** repeated multiple times.
 - It is parameterized by two parameters—the number of trials and the probability of success.
 ## Poisson Distribution
 
-![[Pasted image 20240910222325.png]]
+![[Shared_Images/Pasted image 20240910222325.png]]
 
 - A discrete probability distribution that models the number of events occurring in a fixed interval of time or space.
 - It is parameterized by one parameter—lambda, the rate of occurrence.
 - Example: Analyzing the number of goals a team will score during a specific time period.
 ## Exponential Distribution
 
-![[Pasted image 20240910222432.png]]
+![[Shared_Images/Pasted image 20240910222432.png]]
 
 - A continuous probability distribution that models the time between events occurring in a **Poisson Distribution Process**.
 - It is parameterized by one parameter—lambda, the average rate of events.
 - Example: Analyzing the time between goals scored by a team.
 ## Gamma Distribution
 
-![[Pasted image 20240910222539.png]]
+![[Shared_Images/Pasted image 20240910222539.png]]
 
 - It is a variation of the exponential distribution.
 - A continuous probability distribution that models the waiting time for a specified number of events in a Poisson process.
@@ -99,14 +99,14 @@ Examples: Height in meters (e.g., 1.5 m, 2.0 m, 2.5 m) & Temperature in Fahrenhe
 - Example: Analyzing the time it would take for a team to score, say, three goals.
 ## Beta Distribution
 
-![[Pasted image 20240910222805.png]]
+![[Shared_Images/Pasted image 20240910222805.png]]
 
 - It is used to model probabilities, thus, it is bounded between [0,1].
 - Differs from Binomial in this respect that in Binomial, probability is a parameter.
 - But in Beta, the probability is a random variable.
 ## Uniform Distribution
 
-![[Pasted image 20240910222843.png]]
+![[Shared_Images/Pasted image 20240910222843.png]]
 
 - All outcomes within a given range are equally likely.
 - It can be continuous or discrete.
@@ -114,14 +114,14 @@ Examples: Height in meters (e.g., 1.5 m, 2.0 m, 2.5 m) & Temperature in Fahrenhe
 - Example: Simulating the roll of a fair six-sided die, where each outcome (1, 2, 3, 4, 5, 6) has an equal probability.
 ## Log-Normal Distribution
 
-![[Pasted image 20240910223007.png]]
+![[Shared_Images/Pasted image 20240910223007.png]]
 
 - A continuous probability distribution where the logarithm of the variable follows a normal distribution.
 - It is parameterized by two parameters—mean and standard deviation.
 - Example: Typically, in stock returns, the natural logarithm follows a normal distribution.
 ## Weibull Distribution
 
-![[Pasted image 20240910224543.png]]
+![[Shared_Images/Pasted image 20240910224543.png]]
 
 - It is a Continuous Probability Distribution and models the waiting time for an event.  
 - Often employed to analyze time-to-failure data.
